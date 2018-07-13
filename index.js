@@ -11,7 +11,7 @@ const proxy = httpProxy.createServer({});
 app.all("*", (req, res) => {
   const port = 3000;
   console.log(`i am redirecting to port ${port}`);
-  proxy.web(req, res, { target: `localhost:${port}`})
+  proxy.web(req, res, { target: `http://localhost:${port}`})
 });
 
 const credPath = process.env.CRED_FOLDER_PATH;
