@@ -9,8 +9,8 @@ app.get("/health", (req, res) => res.json("Reporting Health"));
 
 const credPath = process.env.CRED_FOLDER_PATH;
 const options = {
-  cert: fs.readFileSync(path.join(credPath, 'chained.pem')),
-  key: fs.readFileSync(path.join(credPath, 'domain.key'))
+  cert: fs.readFileSync(path.join(credPath, "chained.pem")),
+  key: fs.readFileSync(path.join(credPath, "domain.key"))
 };
 console.log("starting http server");
 http.createServer(app).listen(80);
