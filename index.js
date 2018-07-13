@@ -19,6 +19,6 @@ const options = {
   key: fs.readFileSync(path.join(credPath, "domain.key"))
 };
 console.log("starting http server");
-http.createServer(app).listen(3000);
+http.createServer(app).listen(80);
 console.log("starting https server");
 https.createServer(options, app).listen(443);
