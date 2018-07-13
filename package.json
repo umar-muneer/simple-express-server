@@ -1,0 +1,23 @@
+{
+  "name": "simple-express-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "forever index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/umar-muneer/simple-express-server.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/umar-muneer/simple-express-server/issues"
+  },
+  "homepage": "https://github.com/umar-muneer/simple-express-server#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "forever": "^0.15.3"
+  }
+}
