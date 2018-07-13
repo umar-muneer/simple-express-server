@@ -4,8 +4,8 @@ const https = require("https");
 const fs = require("fs");
 const path = require("path");
 const app = express();
-app.get("/", (req, res) => res.json("Reporting"));
-app.get("/health", (req, res) => res.json("Reporting Health"));
+app.get("/", (req, res) => res.json(`Reporting from ${process.env.SERVER_ID}`));
+app.get("/health", (req, res) => res.json(`Reporting Health ${process.env.SERVER_ID}`));
 
 const credPath = process.env.CRED_FOLDER_PATH;
 const options = {
