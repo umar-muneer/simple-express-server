@@ -64,3 +64,4 @@ account.key
 chained.pem
 domain.key
 script.sh
+wildcard_creds/*
