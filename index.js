@@ -10,6 +10,7 @@ const proxy = httpProxy.createServer({});
 
 app.all("*", (req, res) => {
   const port = req.query.port || 3000;
+  console.log(' i am coming here!!!!');
   proxy.web(req, res, { target: `localhost:${port}`})
 });
 
