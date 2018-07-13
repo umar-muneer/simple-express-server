@@ -1,7 +1,7 @@
 const express = require("express");
 const http = require("http");
 const https = require("https");
-const httpProxy = require("node-http-proxy");
+const httpProxy = require("http-proxy");
 const fs = require("fs");
 const path = require("path");
 
