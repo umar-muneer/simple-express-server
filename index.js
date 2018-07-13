@@ -9,8 +9,8 @@ const app = express();
 const proxy = httpProxy.createServer({});
 
 app.all("*", (req, res) => {
-  const port = req.query.port || 3000;
-  console.log(' i am coming here!!!!');
+  const port = 3000;
+  console.log(`i am redirecting to port ${port}`);
   proxy.web(req, res, { target: `localhost:${port}`})
 });
 
